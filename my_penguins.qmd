@@ -1,0 +1,18 @@
+---
+title: "my_penguins"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+```{r}
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+
+tibble(penguins$species, penguins$bill_length_mm)
+```
