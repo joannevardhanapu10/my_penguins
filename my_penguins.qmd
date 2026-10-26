@@ -13,6 +13,26 @@ library(palmerpenguins)
 ```
 
 ```{r}
+penguins |>
+  group_by(species)|>
+  summarize(
+    average_bill_length = mean(bill_length_mm, na.rm = TRUE)
+  )
 
-tibble(penguins$species, penguins$bill_length_mm)
+```
+
+guins)
+
+```{r}
+ggplot(
+  data = penguins,
+  aes(x = bill_length_mm, y = bill_depth_mm)
+) +
+  geom_point() +
+  labs(
+    title = "Bill length to Bill depth",
+    x = "Bill Length",
+    y = "Bill Depth"
+  )
+  
 ```
